@@ -9,6 +9,7 @@ export interface Club {
   name: string
   slug: string
   category: 'cocurricular' | 'extracurricular' | 'department'
+  subcategory?: string
   tagline?: string
   description?: string
   overview?: string
