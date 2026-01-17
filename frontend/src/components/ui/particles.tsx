@@ -19,7 +19,7 @@ interface Particle {
 export function Particles({ quantity = 50 }: { quantity?: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const particlesRef = useRef<Particle[]>([])
-  const animationFrameRef = useRef<number>()
+  const animationFrameRef = useRef<number | null>(null)
   const mouseRef = useRef({ x: 0, y: 0, radius: 75 })
 
   useEffect(() => {
